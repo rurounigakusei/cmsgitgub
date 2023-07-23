@@ -36,10 +36,11 @@
                 <li>
                     <a href="#">Contact</a>
                 </li> -->
-            </ul>
-            <ul class="nav navbar-right top-nav">
                 <li>
-                    <a href="registration.php">Registration</a>
+                    <a href="../registration.php">Registration</a>
+                </li>
+                <li>
+                    <a href="../contact.php">Contact</a>
                 </li>
             </ul>
         </div>
