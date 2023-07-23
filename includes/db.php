@@ -9,7 +9,7 @@
 //     define(strtoupper($key), $value);
 // } not worked in php 7
 
-//localhost ignored testt
+//localhost ignored testt again
 // $DB_HOST = "localhost";
 // $DB_USER = "root";
 // $DB_PASS = "";
