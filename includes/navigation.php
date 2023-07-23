@@ -27,7 +27,7 @@
                 } ?>
 
                 <li>
-                    <a href="Admin">Admin</a>
+                    <a href="admin/index.php">Admin</a>
                 </li>
 
                 <!-- <li>
@@ -39,7 +39,7 @@
             </ul>
             <ul class="nav navbar-right top-nav">
                 <li>
-                    <a href="Registration.php">Registration</a>
+                    <a href="registration.php">Registration</a>
                 </li>
             </ul>
         </div>
