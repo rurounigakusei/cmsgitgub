@@ -127,7 +127,7 @@
                 <a href="javascript:;" data-toggle="collapse" data-target="#post"><i class="fa fa-fw fa-desktop"></i> Posts <i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="post" class="collapse">
                     <li>
-                        <a href="./posts.php">All Posts</a>
+                        <a href="../posts.php">All Posts</a>
                     </li>
                     <li>
                         <a href="posts.php?source=add_posts">Add Post</a>
@@ -136,7 +136,7 @@
             </li>
 
             <li>
-                <a href="categories"><i class="fa fa-fw fa-wrench"></i> Categories</a>
+                <a href="categories.php"><i class="fa fa-fw fa-wrench"></i> Categories</a>
             </li>
 
             <li>
