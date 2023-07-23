@@ -9,17 +9,17 @@
 //     define(strtoupper($key), $value);
 // } not worked in php 7
 
-//localhost ignored
-$DB_HOST = "localhost";
-$DB_USER = "root";
-$DB_PASS = "";
-$DB_NAME = "cms";
+//localhost ignored testt
+// $DB_HOST = "localhost";
+// $DB_USER = "root";
+// $DB_PASS = "";
+// $DB_NAME = "cms";
 
 //niagahoster
-// $DB_HOST = "localhost";
-// $DB_USER = "u485871302_cms";
-// $DB_PASS = "Projectcms123";
-// $DB_NAME = "u485871302_cms";
+$DB_HOST = "localhost";
+$DB_USER = "u485871302_cms";
+$DB_PASS = "Projectcms123";
+$DB_NAME = "u485871302_cms";
 
 // $DB_HOST = "sql212.infinityfree.com";
 // $DB_USER = "if0_34643018";
