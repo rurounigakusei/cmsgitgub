@@ -15,7 +15,7 @@
 // $DB_PASS = "";
 // $DB_NAME = "cms";
 
-//niagahoster
+//niagahosterss
 $DB_HOST = "localhost";
 $DB_USER = "u485871302_cms";
 $DB_PASS = "Projectcms123";
