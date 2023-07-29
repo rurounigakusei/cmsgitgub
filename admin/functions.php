@@ -12,7 +12,7 @@ function users_online()
     global $connection;
     // if (!$connection) {
     //     session_start();
-    //     include("../includes/db.php");
+    //     include("../includes/dibi/db.php");
     // this not working
 
     $session = session_id();

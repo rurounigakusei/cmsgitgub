@@ -1,4 +1,4 @@
-<?php include "db.php"; ?>
+<?php include "dibi/db.php"; ?>
 <?php session_start(); ?>
 
 <?php

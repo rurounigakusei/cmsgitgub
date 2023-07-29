@@ -1,4 +1,4 @@
-<?php include "includes/db.php"; ?>
+<?php include "includes/dibi/db.php"; ?>
 <?php include "includes/header.php"; ?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
