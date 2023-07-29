@@ -59,9 +59,10 @@ if (empty($_SESSION['user_role'])) {
     <![endif]-->
     <link href="css/styles.css" rel="stylesheet">
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/scripts.js"></script>
 
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- js/jquery.js is to enabled delete modal in view all post -->
 </head>
 
 <body>
