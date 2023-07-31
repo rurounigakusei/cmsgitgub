@@ -9,7 +9,7 @@
 //     define(strtoupper($key), $value);
 // } not worked in php 7
 
-//localhost ignored fail. try to private
+//localhost ignored fail.
 $DB_HOST = "localhost";
 $DB_USER = "root";
 $DB_PASS = "";
