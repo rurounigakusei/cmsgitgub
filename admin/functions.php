@@ -117,3 +117,21 @@ function recordCount($table)
 
     return $result;
 }
+
+//lesson 272, create more structurized admin access prevention using functions and session
+/**watch below code, because $username is a var that parsed through an array from global variable
+ * called $_SESSION, $username should be written $username='parsed value' 
+ */
+function is_admin($username = '')
+{
+    global $connection;
+    $query = "SELECT user_role FROM users WHERE username = '$username'";
+    $result = mysqli_query($connection, $query);
+    $row = mysqli_fetch_array($result);
+
+    if ($row['user_role'] == 'admin') {
+        return true;
+    } else {
+        return false;
+    }
+}

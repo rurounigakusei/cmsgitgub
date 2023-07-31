@@ -1,5 +1,14 @@
 <?php include "includes/admin_header.php"; ?>
 
+<?php
+//watch below code, is a combination of if and functions, and global variable $_SESSION
+if (!is_admin($_SESSION['username'])) {
+    //read : if function is_admin returning false, then do command header below
+    header("Location:index.php");
+}
+
+?>
+
 <div id="wrapper">
 
     <!-- Navigation -->
