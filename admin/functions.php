@@ -104,3 +104,16 @@ function redirect($location)
 {
     //return header(header: "Location:" . $location);
 }
+
+
+function recordCount($table)
+{
+    global $connection;
+
+    $query = "SELECT * FROM " . $table;
+    $totalposts = mysqli_query($connection, $query);
+    $result = mysqli_num_rows($totalposts);
+    confirm($result);
+
+    return $result;
+}

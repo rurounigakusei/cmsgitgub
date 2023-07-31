@@ -94,8 +94,18 @@ if (isset($_POST['checboxArray'])) {
         </thead>
         <tbody>
             <?php
-            $query = "SELECT * FROM posts ORDER BY post_id DESC";
+            // $query = "SELECT * FROM posts ORDER BY post_id DESC";
+            //refactoring pull data by JOIN table course 270
+            $query = "SELECT posts.post_id, posts.post_author, posts.post_title, posts.post_category_id, posts.post_status, posts.post_image, posts.post_content, ";
+            $query .= "posts.post_tags, posts.post_comment_count, posts.post_date, posts.post_views_count, categories.cat_id, categories.cat_title ";
+            $query .= "FROM posts ";
+            $query .= " LEFT JOIN categories ON posts.post_category_id = categories.cat_id ";
+            $query .= " ORDER BY posts.post_id DESC ";
+
+            //performing concatenated form of query, makes you easier on reading code focus
+
             $show_all_posts = mysqli_query($connection, $query);
+            confirm($show_all_posts);
 
             //PERFORM ACTION SHOWING DATA WHILE CONDITION REMAIN TRUE
             while ($row = mysqli_fetch_assoc($show_all_posts)) {
@@ -110,6 +120,8 @@ if (isset($_POST['checboxArray'])) {
                 $post_views_count = $row['post_views_count']; // remember set database default value to either null, or as defined
                 $post_comment_count = $row['post_comment_count'];
                 $post_status = $row['post_status'];
+                $cat_id = $row['cat_id'];
+                $cat_title = $row['cat_title'];
                 echo "<tr>";
             ?>
                 <td><input class='checkbox' type='checkbox' name='checboxArray[]' value='<?php echo $post_id; ?>'></input></td>
@@ -117,14 +129,15 @@ if (isset($_POST['checboxArray'])) {
                 echo "<td>$post_id</td>";
 
                 //repairing missed on picking category_id while it must be easier using category title
-                $query = "SELECT * FROM categories WHERE cat_id = $post_cat_id";
-                $show_selected_categories = mysqli_query($connection, $query);
+                //refactored
+                // $query = "SELECT * FROM categories WHERE cat_id = $post_cat_id";
+                // $show_selected_categories = mysqli_query($connection, $query);
 
-                while ($row = mysqli_fetch_assoc($show_selected_categories)) {
-                    $cat_id = $row['cat_id'];
-                    $cat_title = $row['cat_title'];
-                    echo "<td>$post_cat_id-$cat_title </td>";
-                }
+                // while ($row = mysqli_fetch_assoc($show_selected_categories)) {
+                // $cat_id = $row['cat_id'];
+                // $cat_title = $row['cat_title'];
+                echo "<td>$post_cat_id-$cat_title </td>";
+                //refactored }
 
                 echo "<td>$post_title</td>";
                 echo "<td>$post_author</td>";

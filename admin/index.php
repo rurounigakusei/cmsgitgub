@@ -43,8 +43,11 @@
                                 <div class="col-xs-9 text-right">
                                     <div class='huge'>
                                         <?php
-                                        $totalposts = mysqli_query($connection, "SELECT * FROM posts");
-                                        echo $count_posts = mysqli_num_rows($totalposts);
+                                        // $query = "SELECT * FROM posts";
+                                        // $totalposts = mysqli_query($connection, $query);
+                                        // refactored to functions, remove uncessary repetitive sql code
+                                        $count_posts = recordCount('posts');
+                                        echo $count_posts;
                                         ?>
 
                                     </div>
