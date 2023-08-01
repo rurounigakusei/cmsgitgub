@@ -1,5 +1,6 @@
 <?php include "includes/dibi/db.php"; ?>
 <?php include "includes/header.php"; ?>
+<?php include "admin/functions.php"; ?>
 
 <?php
 if (isset($_POST['submit'])) {
@@ -8,7 +9,11 @@ if (isset($_POST['submit'])) {
     $email = $_POST['email']; // refer to form name name="email"
     $password = $_POST['password'];
 
-    if (!empty($username) && !empty($email) && !empty($password)) {
+    if (username_exist($username)) {
+        $message = "username already taken, please pick another name";
+    } elseif (user_email_exist($email)) {
+        $message = "email already taken, please pick new one";
+    } elseif (!empty($username) && !empty($email) && !empty($password)) {
         $username = mysqli_real_escape_string($connection, $username);
         $user_email = mysqli_real_escape_string($connection, $email);
         $user_password = mysqli_real_escape_string($connection, $password);
