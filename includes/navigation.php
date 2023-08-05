@@ -1,5 +1,7 @@
 <?php include "includes/dibi/db.php"; ?>
 <?php include "includes/header.php"; ?>
+<?php //include "admin/functions.php";
+?>
 
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -39,15 +41,37 @@
                         $contact_class = 'active';
                     }
 
-                    echo "<li class ='$category_class'><a href='category.php?category={$cat_id}'>{$cat_title}</a></li>";
+                    //echo "<li class ='$category_class'><a href='category.php?category={$cat_id}'>{$cat_title}</a></li>";
                 } ?>
 
-                <!-- <li>
-                    <a href="#">Services</a>
-                </li>
+                <!-- lesson 289
+                 we can execute html code between php using form like below : -->
+                <!--
+                    <'?php if(any condition/ function()): ?>
+                some html code,,...
+                and open again like below : 
+                <'?php else;?> etc...
+                <'?php endif;?>
+                -->
+                <?php //if (isLoggedIn()) :
+                ?>
                 <li>
-                    <a href="#">Contact</a>
-                </li> -->
+                    <a href='admin/index.php'>Admin</a>
+                </li>
+                <!-- <li>
+                        <a href='admin/includes/logout.php'>Logout</a>
+                    </li> -->
+
+                <?php //else :
+                ?>
+                <li>
+                    <a href='login.php'>Login</a>
+                </li>
+
+                <?php //endif;
+                ?>
+
+
                 <li class='<?php echo $registration_class; ?>'>
                     <a href="registration.php">Registration</a>
                     <!-- <a><?php //$pagename = basename($_SERVER['PHP_SELF']); {
@@ -58,9 +82,8 @@
                 <li class='<?php echo $contact_class; ?>'>
                     <a href="contact.php">Contact</a>
                 </li>
-                <li>
-                    <a href="admin/index.php">Admin</a>
-                </li>
+
+
             </ul>
         </div>
 
