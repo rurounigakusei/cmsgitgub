@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\PHPMailer; ?>
 <?php include "includes/dibi/db.php"; ?>
 <?php include "includes/header.php"; ?>
 <?php include "admin/functions.php"; ?>
+<?php include "includes/navigation.php"; ?>
 
 
 

@@ -22,12 +22,13 @@
                     <button class='btn btn-primary' type='submit' name='login'>Login</button>
                 </span>
             </div>
-            <div class='form-group'>
-            <a href='forgot.php?forgot=<?php echo uniqid(true);>'>Forgot Password ?</a>
-            </div>
+            
         </form>";
         }
         ?>
+        <div class='form-group'>
+            <a href='forgot.php?forgot=<?php echo uniqid(true); ?>'>Forgot Password ?</a>
+        </div>
     </div>
 
     <!-- Blog Search Well -->
