@@ -39,8 +39,6 @@ if (ifItIsMethod('post')) {
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_close($stmt);
 
-
-
                 /**
                  *
                  * configure PHPMailer
@@ -61,7 +59,7 @@ if (ifItIsMethod('post')) {
                 $mail->CharSet = 'UTF-8';
 
 
-                $mail->setFrom('edwin@codingfaculty.com', 'Edwin Diaz');
+                $mail->setFrom('rurouni.gakusei@gmail.com', 'Achmad M');
                 $mail->addAddress($email);
 
                 $mail->Subject = 'This is a test email';
@@ -117,9 +115,6 @@ if (ifItIsMethod('post')) {
                                 <h2 class="text-center">Forgot Password?</h2>
                                 <p>You can reset your password here.</p>
                                 <div class="panel-body">
-
-
-
 
                                     <form id="register-form" role="form" autocomplete="off" class="form" method="post">
 

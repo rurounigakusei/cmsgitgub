@@ -1,12 +1,19 @@
 {
     "name": "xcbn0010/cms",
     "require": {
-        "phpmailer/phpmailer": "^6.8"
+        "phpmailer/phpmailer": "^5.6"
     },
+    
+    "autoload": {
+"classmap":[
+    "classes"
+]
+    },
+    
     "authors": [
         {
-            "name": "sanemi",
-            "email": "windhashira@kimetsu.com"
+            "name": "gakusei",
+            "email": "rurouni.gakusei@gmail.com"
         }
     ]
 }

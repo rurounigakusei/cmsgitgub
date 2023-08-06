@@ -27,7 +27,9 @@
         }
         ?>
         <div class='form-group'>
-            <a href='forgot.php?forgot=<?php echo uniqid(true); ?>'>Forgot Password ?</a>
+            <!-- <a href='forgot.php?forgot=<?php //echo uniqid(true); 
+                                            ?>'>Forgot Password ?</a> -->
+            <!-- error due to not running on sending email -->
         </div>
     </div>
 

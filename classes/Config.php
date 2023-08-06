@@ -2,8 +2,8 @@
 //lesson 298 - sending email.
 class Config
 {
-    const SMTP_HOST = 'smtp.mailtrap.io';
-    const SMTP_PORT = 2525;
-    const SMTP_USER = '7e7426da17a9bb';
-    const SMTP_PASSWORD = '70228f36584a5a';
+    const SMTP_HOST = 'sandbox.smtp.mailtrap.io';
+    const SMTP_PORT = 25;
+    const SMTP_USER = '232b0530247781';
+    const SMTP_PASSWORD = '40aaf2bad73182';
 }
