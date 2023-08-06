@@ -65,7 +65,8 @@
                 <?php //else :
                 ?>
                 <li>
-                    <a href='login.php'>Login</a>
+                    <!-- skipped cz have been served by previous login feature -->
+                    <!-- <a href='login.php'>Login</a> -->
                 </li>
 
                 <?php //endif;
